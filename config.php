@@ -19,7 +19,7 @@ $cfg_array = [
     'Torrent_password' => '',
     'storage_path' => '',
     'storage_name' => 'NAS',
-    'enable_second storage' => 'true',
+    'enable_second_storage' => 'true',
     'storage_path2' => '',
     'storage_name2' => 'FreeNas',
 ];
