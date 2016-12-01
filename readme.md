@@ -31,8 +31,11 @@ This Home Dashboard was built using:
 * [tobias redmann's forecast.io php api](https://github.com/tobias-redmann/forecast.io-php-api)
 * [darkskyapp's Skycons](https://github.com/darkskyapp/skycons)
 
-## Screenshot
+## Screenshots
 ![Not found](/screenshots/home.PNG?raw=true "Home")
+![Not found](/screenshots/sidenav_open.PNG?raw=true "Side Open")
+![Not found](/screenshots/plex.PNG?raw=true "Plex")
+
 
 
 ** Special thanks **
