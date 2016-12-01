@@ -9,6 +9,7 @@ The time display is based on your php settings. Set the timezone in your php.ini
 
 ## Bookmarks
 Bookmarks must be set in the "bookmarks.dat" file. Here's an example:
+
     [qBittorrent]
 	url=https://192.168.0.0:8080
 	icon=icon_cloud-download_alt
