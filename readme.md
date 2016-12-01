@@ -31,7 +31,7 @@ This Home Dashboard was built using:
 * [darkskyapp's Skycons](https://github.com/darkskyapp/skycons)
 
 ## Screenshot
-![Not found](/screenshots/home.png?raw=true "Home")
+![Not found](/blob/master/screenshots/home.png?raw=true "Home")
 
 
 ** Special thanks **
