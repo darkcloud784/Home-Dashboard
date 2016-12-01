@@ -13,6 +13,9 @@
         <link href="css/custom.css" rel="stylesheet">
         <script src="js/jquery.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
+        <script src="https://www.google.com/uds/api?file=uds.js&v=1.0&key=AIzaSyBKuDQfjGRFrBETrff_O2b17I-1dNePYow" type="text/javascript"></script>
+        
+        <script language="Javascript" type="text/javascript"> //<![CDATA[ // Create a search control var searchControl = new GSearchControl(); // create a search object searchControl.addSearcher(new GwebSearch()); // tell Google where to draw the searchbox searchControl.draw(document.getElementById("search-box")); } GSearch.setOnLoadCallback(OnLoad); //]]> </script>
     </head>
     <body>
         <?php
@@ -52,16 +55,34 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-lg-12 col-md-3 col-sm-12 col-xs-12">
-                        
-                        <h5 class="info-box dark-heading-bg">
+                    <div class="info-box dark-heading-bg">
+                        <div>
                             <i class="icon_drive"></i>
-                        <?php
-                        include 'storage.php';
-                        ?>
-                        </h5>
+                            <?php
+                            include 'storage.php';
+                            ?>
+
+                        </div>
+                        <div class="w3-center">
+                            <span class="search-box">                            
+                                <form method="get" action="https://www.google.com/search">
+                                    <input style="color:#000000"
+                                           type="text"
+                                           name="q"
+                                           size="31"
+                                           color=""
+                                           value="Google Search"
+                                           placeholder="Google Search"
+                                           onfocus="if(this.value == 'Google Search') {
+                                       this.value = '';
+                                       this.style.color='#000';
+                                   }"
+                                           >
+                                </form>
+                            </span>
+                        </div>
                     </div>
-                    </div>
+                </div>
 
                 <!--Downloading and Seeding Section-->
                 <?php

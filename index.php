@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <title>Dashboard</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="shortcut icon" href="img/favicon.png"/>
+        <link rel="shortcut icon" href="img/favicon.ico" type='image/x-icon'/>
         <link href="css/bootstrap.min.css" rel="stylesheet"/>
         <link href="css/elegant-icons-style.css" rel="stylesheet" />
         <script src="js/jquery.min.js"></script>
@@ -73,12 +73,12 @@
             <!-- Title -->
             <span class="header1"><h3 class="header1"><?php echo $cfg_array['Title']; ?></h3></span>
             <!-- Date -->
-            <span class="span_right"><h3 class="right_header"><?php echo $today ?></h3></span>                
+            <span class="w3-right"><h3 class="w3-right-align"><?php echo $today ?></h3></span>                
         </header>
     </div>
     <!-- Start iframe content -->          
     <div class="frame" id="iframe">
-        <iframe style="height: calc(100% - 40px); width: 100%; position: absolute; border: none;" name="search_iframe" src="main.php" height="100%" width="100%" allowfullscreen="" ></iframe>
+        <iframe style="height: calc(100% - 40px); width: 100%; position: absolute; border: none;" name="search_iframe" src="main.php" allowfullscreen="" ></iframe>
     </div>
     <!-- JavaScript-->
     <script>

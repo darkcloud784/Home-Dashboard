@@ -184,7 +184,8 @@ input[type=checkbox].w3-check:disabled+.w3-validate,input[type=radio].w3-radio:d
 .w3-xxxlarge{font-size:48px!important}.w3-jumbo{font-size:64px!important}
 .w3-vertical{word-break:break-all;line-height:1;text-align:center;width:0.6em}
 .w3-left-align{text-align:left!important}.w3-right-align{text-align:right!important}
-.w3-justify{text-align:justify!important}.w3-center{text-align:center!important}
+.w3-justify{text-align:justify!important}
+.w3-center{text-align:center!important}
 .w3-display-topleft{position:absolute;left:0;top:0}.w3-display-topright{position:absolute;right:0;top:0}
 .w3-display-bottomleft{position:absolute;left:0;bottom:0}.w3-display-bottomright{position:absolute;right:0;bottom:0}
 .w3-display-middle{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);-ms-transform:translate(-50%,-50%)}
@@ -398,5 +399,26 @@ input[type=checkbox].w3-check:disabled+.w3-validate,input[type=radio].w3-radio:d
 .nas-primary{
     padding-left: 20px;
 }
-
-
+.right {
+    position: float;
+    right: 0px;
+    top: -10px;
+    width: 50px;
+    border: none;
+    padding: 10px;
+}
+input::-webkit-input-placeholder {
+color: red !important;
+}
+ 
+input:-moz-placeholder { /* Firefox 18- */
+color: red !important;  
+}
+ 
+input::-moz-placeholder {  /* Firefox 19+ */
+color: red !important;  
+}
+ 
+input:-ms-input-placeholder {  
+color: red !important;  
+}
