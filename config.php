@@ -23,6 +23,7 @@ $cfg_array = [
     'enable_second_storage' => 'true',
     'storage_path2' => '',
     'storage_name2' => 'FreeNas',
+    'enable_reddit' => 'true',
 ];
 return $cfg_array;
 
