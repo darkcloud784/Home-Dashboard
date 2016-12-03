@@ -14,8 +14,6 @@
         <script src="js/jquery.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
         <script src="https://www.google.com/uds/api?file=uds.js&v=1.0&key=AIzaSyBKuDQfjGRFrBETrff_O2b17I-1dNePYow" type="text/javascript"></script>
-        
-        <script language="Javascript" type="text/javascript"> //<![CDATA[ // Create a search control var searchControl = new GSearchControl(); // create a search object searchControl.addSearcher(new GwebSearch()); // tell Google where to draw the searchbox searchControl.draw(document.getElementById("search-box")); } GSearch.setOnLoadCallback(OnLoad); //]]> </script>
     </head>
     <body>
         <?php
@@ -36,6 +34,14 @@
 
 
         <!--main content start-->
+        <script>
+            function autoRefresh_div()
+            {
+                $("#torrent").load("torrent.php");// a function which will load data from other file after x seconds
+            }
+
+            setInterval('autoRefresh_div()', 5000); // refresh div after 5 secs
+        </script>
         <section id="main-content">
             <!--overview start-->
             <section class="wrapper-frame">
@@ -45,25 +51,26 @@
                         <h3 class="page-header"><i class="fa fa-laptop"></i> Dashboard</i></h3>
                     </div>
                 </div>
-                <!--Breadcrumb Section-->
-                <div class="row">
-                    <div class="col-lg-12">
-                        <ol class="breadcrumb">
-                            <li><i class="fa fa-home"></i><a href="main.php">Home</a></li>
-                            <li><i class="fa fa-laptop"></i>Dashboard</li>
-                        </ol>
-                    </div>
-                </div>
-                <div class="row">
+                <div class="row"
+                <div class="col-md-6">
                     <div class="info-box dark-heading-bg">
                         <div>
                             <i class="icon_drive"></i>
                             <?php
                             include 'storage.php';
                             ?>
-
                         </div>
-                        <div class="w3-center">
+                    
+                        <br>
+                        <div>
+                            <?php
+                            if ($cfg_array['enable_second_storage'] == 'true') {
+                                include 'storage2.php';
+                            }
+                            ?>
+                        </div>
+                        <br>
+                        <div class="w3-left">
                             <span class="search-box">                            
                                 <form method="get" action="https://www.google.com/search">
                                     <input style="color:#000000"
@@ -73,24 +80,31 @@
                                            color=""
                                            value="Google Search"
                                            placeholder="Google Search"
-                                           onfocus="if(this.value == 'Google Search') {
-                                       this.value = '';
-                                       this.style.color='#000';
-                                   }"
+                                           onfocus="if (this.value == 'Google Search') {
+                                                       this.value = '';
+                                                       this.style.color = '#000';
+                                                   }"
                                            >
                                 </form>
                             </span>
                         </div>
                     </div>
                 </div>
+                <div class="row">
+                    <div class="info-box dark-heading-bg">
+                        <script src="https://www.reddit.com/top/.embed?limit=10&t=day&twocolumn=true" type="text/javascript"></script>
+                    </div>
+                </div>
 
                 <!--Downloading and Seeding Section-->
+                
                 <?php
                 if (!$cfg_array['Torrent_Client'] == "") {
                     include 'torrent.php';
                 }
                 ?>
                 <!--Error display-->
+                
                 <?php
                 if (count($errors) > 0) {
                     echo "<div class=\"row\">";
@@ -105,6 +119,7 @@
                     echo "</div>";
                 }
                 ?>
+                
             </section>
             <!--overview end-->
         </section>

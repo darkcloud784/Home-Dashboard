@@ -12,6 +12,7 @@ $cfg_array = [
     'weather_key' => '',
     'units' => 'us',
     'lang' => 'en',
+    'refesh_in_seconds' => '15',
     'Torrent_Client' => 'transmission',
     'Torrent_Server_IP' => 'localhost',
     'Torrent_Server_Port' => '9091',

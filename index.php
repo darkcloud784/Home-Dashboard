@@ -13,6 +13,7 @@
     </head>
 
     <body>
+ 
         <?php
         $today = date("F j, Y, g:i a");
         $cfg_array = include('config.php');
@@ -73,12 +74,12 @@
             <!-- Title -->
             <span class="header1"><h3 class="header1"><?php echo $cfg_array['Title']; ?></h3></span>
             <!-- Date -->
-            <span class="w3-right"><h3 class="w3-right-align"><?php echo $today ?></h3></span>                
+            <span class="w3-right"><h3 class="w3-right-align"><?php echo $today ?></h3></span>    
         </header>
     </div>
     <!-- Start iframe content -->          
     <div class="frame" id="iframe">
-        <iframe style="height: calc(100% - 40px); width: 100%; position: absolute; border: none;" name="search_iframe" src="main.php" allowfullscreen="" ></iframe>
+        <iframe style="height: calc(100% - 50px); width: 100%; position: absolute; border: none;" name="search_iframe" src="main.php" allowfullscreen="" ></iframe>
     </div>
     <!-- JavaScript-->
     <script>

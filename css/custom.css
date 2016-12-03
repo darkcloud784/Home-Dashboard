@@ -136,31 +136,31 @@ input[type=checkbox].w3-check:disabled+.w3-validate,input[type=radio].w3-radio:d
 .w3-col.s11{width:91.66666%}
 .w3-col.s12,.w3-half,.w3-third,.w3-twothird,.w3-threequarter,.w3-quarter{width:99.99999%}
 @media only screen and (min-width:601px){
-.w3-col.m1{width:8.33333%}
-.w3-col.m2{width:16.66666%}
-.w3-col.m3,.w3-quarter{width:24.99999%}
-.w3-col.m4,.w3-third{width:33.33333%}
-.w3-col.m5{width:41.66666%}
-.w3-col.m6,.w3-half{width:49.99999%}
-.w3-col.m7{width:58.33333%}
-.w3-col.m8,.w3-twothird{width:66.66666%}
-.w3-col.m9,.w3-threequarter{width:74.99999%}
-.w3-col.m10{width:83.33333%}
-.w3-col.m11{width:91.66666%}
-.w3-col.m12{width:99.99999%}}
+    .w3-col.m1{width:8.33333%}
+    .w3-col.m2{width:16.66666%}
+    .w3-col.m3,.w3-quarter{width:24.99999%}
+    .w3-col.m4,.w3-third{width:33.33333%}
+    .w3-col.m5{width:41.66666%}
+    .w3-col.m6,.w3-half{width:49.99999%}
+    .w3-col.m7{width:58.33333%}
+    .w3-col.m8,.w3-twothird{width:66.66666%}
+    .w3-col.m9,.w3-threequarter{width:74.99999%}
+    .w3-col.m10{width:83.33333%}
+    .w3-col.m11{width:91.66666%}
+    .w3-col.m12{width:99.99999%}}
 @media only screen and (min-width:993px){
-.w3-col.l1{width:8.33333%}
-.w3-col.l2{width:16.66666%}
-.w3-col.l3,.w3-quarter{width:24.99999%}
-.w3-col.l4,.w3-third{width:33.33333%}
-.w3-col.l5{width:41.66666%}
-.w3-col.l6,.w3-half{width:49.99999%}
-.w3-col.l7{width:58.33333%}
-.w3-col.l8,.w3-twothird{width:66.66666%}
-.w3-col.l9,.w3-threequarter{width:74.99999%}
-.w3-col.l10{width:83.33333%}
-.w3-col.l11{width:91.66666%}
-.w3-col.l12{width:99.99999%}}
+    .w3-col.l1{width:8.33333%}
+    .w3-col.l2{width:16.66666%}
+    .w3-col.l3,.w3-quarter{width:24.99999%}
+    .w3-col.l4,.w3-third{width:33.33333%}
+    .w3-col.l5{width:41.66666%}
+    .w3-col.l6,.w3-half{width:49.99999%}
+    .w3-col.l7{width:58.33333%}
+    .w3-col.l8,.w3-twothird{width:66.66666%}
+    .w3-col.l9,.w3-threequarter{width:74.99999%}
+    .w3-col.l10{width:83.33333%}
+    .w3-col.l11{width:91.66666%}
+    .w3-col.l12{width:99.99999%}}
 .w3-content{max-width:980px;margin:auto}
 .w3-rest{overflow:hidden}
 .w3-hide{display:none!important}.w3-show-block,.w3-show{display:block!important}.w3-show-inline-block{display:inline-block!important}
@@ -185,7 +185,7 @@ input[type=checkbox].w3-check:disabled+.w3-validate,input[type=radio].w3-radio:d
 .w3-vertical{word-break:break-all;line-height:1;text-align:center;width:0.6em}
 .w3-left-align{text-align:left!important}.w3-right-align{text-align:right!important}
 .w3-justify{text-align:justify!important}
-.w3-center{text-align:center!important}
+.w3-center{text-align:center!important;}
 .w3-display-topleft{position:absolute;left:0;top:0}.w3-display-topright{position:absolute;right:0;top:0}
 .w3-display-bottomleft{position:absolute;left:0;bottom:0}.w3-display-bottomright{position:absolute;right:0;bottom:0}
 .w3-display-middle{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);-ms-transform:translate(-50%,-50%)}
@@ -366,17 +366,17 @@ input[type=checkbox].w3-check:disabled+.w3-validate,input[type=radio].w3-radio:d
     vertical-align: middle;
 }
 .span_right{
-  display: inline-block;
-  line-height: normal;
-  vertical-align: middle;
-  float:right;
-    }
+    display: inline-block;
+    line-height: normal;
+    vertical-align: middle;
+    float:right;
+}
 .right_header{
-  width: 200px;
-  height: 20px;
-  line-height: 20px;
-  text-align: center;
-    }
+    width: 200px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+}
 .header1{
     display: inline-block;
     text-align: center;
@@ -408,17 +408,65 @@ input[type=checkbox].w3-check:disabled+.w3-validate,input[type=radio].w3-radio:d
     padding: 10px;
 }
 input::-webkit-input-placeholder {
-color: red !important;
+    color: red !important;
 }
- 
+
 input:-moz-placeholder { /* Firefox 18- */
-color: red !important;  
+    color: red !important;  
 }
- 
+
 input::-moz-placeholder {  /* Firefox 19+ */
-color: red !important;  
+    color: red !important;  
 }
- 
+
 input:-ms-input-placeholder {  
-color: red !important;  
+    color: red !important;  
+}
+/* Style the list */
+ul.tab {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+
+/* Float the list items side by side */
+ul.tab li {float: left;}
+
+/* Style the links inside the list items */
+ul.tab li a {
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+/* Change background color of links on hover */
+ul.tab li a:hover {background-color: #ddd;}
+
+/* Create an active/current tablink class */
+ul.tab li a:focus, .active {background-color: #ccc;}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+    -webkit-animation: fadeEffect 1s;
+    animation: fadeEffect 1s; /* Fading effect takes 1 second */
+}
+@-webkit-keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
 }
