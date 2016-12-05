@@ -13,7 +13,7 @@
     </head>
 
     <body>
- 
+
         <?php
         $today = date("F j, Y, g:i a");
         $cfg_array = include('config.php');
@@ -32,18 +32,18 @@
 
         <!-- Start sidebar -->
 
-        <nav class="w3-sidenav w3-white w3-card-2" style="display:none" id="sidenav">
+        <nav class="w3-sidenav w3-white w3-card-2 w3-border" style="display:none" id="sidenav">
             <a href="javascript:void(0)"
                onclick="w3_close()"
                class="w3-closenav w3-medium">Close &times;</a>
-            <a href="main.php" target="search_iframe"><i class="icon_desktop"></i> Dashboard</a></i>
+            <a href="main.php" class="w3-border-bottom" target="search_iframe"><i class="icon_desktop"></i> Dashboard</a></i>
         <?php
         $bms = spawnBookmarks();
         foreach ($bms as $bm) {
             if ($bm->iframe)
-                echo "<a href=\"" . $bm->url . "\" target=\"search_iframe\">";
+                echo "<a href=\"" . $bm->url . "\" . target=\"search_iframe\" . class=\"w3-border\">";
             else
-                echo "<a href=\"" . $bm->url . "\" target=\"_blank\">";
+                echo "<a href=\"" . $bm->url . "\" target=\"_blank\" . class=\"w3-border\">";
             echo "<i class=\"" . $bm->icon . "\"></i>";
             echo "     ";
             echo $bm->name;
@@ -62,18 +62,18 @@
             <span style="padding-left: 20px;">
                 <h3 class="nav-mid">
                     <?php echo '<a href="https://darksky.net/forecast/' . $cfg_array['latitude'] . $cfg_array['longitude'] . '"' . " " . "target=search_iframe" . '>' .
-                    "<b>" . round($weather[2]) . "</b>, " . $weather[0] . ",  Feels like <b>" . round($weather[3]) . '' . "</a>" . "</b>"; ?></h3>
+                    "<b>" . round($weather[2]) . "</b>, " . $weather[0] . ",  Feels like <b>" . round($weather[3]) . '' . "</a>" . "</b>";
+                    ?></h3>
                 <span class="iweather">
                     <canvas id="weather-canvas" width="32" height="32"></canvas></span>
                 <script src="js/skycons.js"></script>
                 <script>
-            var icons = new Skycons();
-            icons.set("weather-canvas", "<?php echo $weather[1]; ?>");
-            icons.play();
-                </script>
-                            
+                var icons = new Skycons();
+                icons.set("weather-canvas", "<?php echo $weather[1]; ?>");
+                icons.play();
+                </script>    
             </span>
-           
+
             <!-- Title -->
             <span class="header1"><h3 class="header1"><?php echo $cfg_array['Title']; ?></h3></span>
             <!-- Date -->
