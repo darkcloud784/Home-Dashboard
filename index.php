@@ -61,7 +61,8 @@
             <!-- Weather -->
             <span style="padding-left: 20px;">
                 <h3 class="nav-mid">
-                    <?php echo "<b>" . round($weather[2]) . "</b>, " . $weather[0] . ",  Feels like <b>" . round($weather[3]) . "</b>"; ?></h3>
+                    <?php echo '<a href="https://darksky.net/forecast/' . $cfg_array['latitude'] . $cfg_array['longitude'] .'"' .
+                    "<b>" . round($weather[2]) . "</b>, " . $weather[0] . ",  Feels like <b>" . round($weather[3]) . '' . "</a>" . "</b>"; ?></h3>
                 <span class="iweather">
                     <canvas id="weather-canvas" width="32" height="32"></canvas></span>
                 <script src="js/skycons.js"></script>
@@ -70,7 +71,9 @@
             icons.set("weather-canvas", "<?php echo $weather[1]; ?>");
             icons.play();
                 </script>
+                            
             </span>
+           
             <!-- Title -->
             <span class="header1"><h3 class="header1"><?php echo $cfg_array['Title']; ?></h3></span>
             <!-- Date -->
