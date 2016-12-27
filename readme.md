@@ -7,6 +7,8 @@ Home dashboard is a homelab dashboard with qBittorrent, Transmission, and foreca
 Extract to your webserver and create a "bookmarks.dat" file in the root direcotry. Edit the config.php file and fill in the necessary information.
 The time display is based on your php settings. Set the timezone in your php.ini file.
 
+Requirements: PHP 5.x
+
 ## Bookmarks
 Bookmarks must be set in the "bookmarks.dat" file. Here's an example:
 
