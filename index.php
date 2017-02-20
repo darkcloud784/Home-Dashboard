@@ -61,7 +61,7 @@
             <!-- Weather -->
             <span style="padding-left: 20px;">
                 <h3 class="nav-mid">
-                    <?php echo '<a href="https://darksky.net/forecast/' . $cfg_array['latitude'] . $cfg_array['longitude'] . '"' . " " . "target=search_iframe" . '>' .
+                    <?php echo '<a href="https://darksky.net/forecast/' . $cfg_array['latitude'] . ',' . $cfg_array['longitude'] . '"' . " target=search_iframe" . '>' .
                     "<b>" . round($weather[2]) . "</b>, " . $weather[0] . ",  Feels like <b>" . round($weather[3]) . '' . "</a>" . "</b>";
                     ?></h3>
                 <span class="iweather">

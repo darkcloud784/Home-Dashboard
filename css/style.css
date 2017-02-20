@@ -2104,7 +2104,8 @@ div[data-role="editor-toolbar"] {
 
     background: #00aced;
 
-    background-color : #00aced; 
+    background-color : #00aced;
+    border: 1px solid #4c4f53;
 
 }
 

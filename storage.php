@@ -22,4 +22,5 @@ function formatSize($bytes) {
         ;
     return( round($bytes, 2) . " " . $types[$i] );
 }
+
 echo "$storage_name:  $du Used - $df Free - $dt Total";
