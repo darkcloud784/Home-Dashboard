@@ -27,6 +27,9 @@ Bookmarks must be set in the "bookmarks.dat" file. Here's an example:
  * icon: The icon of the bookmark, available icons are displayed here: https://www.elegantthemes.com/blog/resources/elegant-icon-font, Look under "Complete List Of Class Names".
  * iframe: Can be true or false. "True" will open the page in the current window while "false" will open it in a new tab. You may encounter problem with "true" as some softwares won't allow loading in an iframe. Sometimes, you just need to visit the page once to accept the self-signed certificate.
 
+## Grafana dashlets
+Grafana dashlets can be added through the dashlets.php file. Just add the URL provided by grafana. You can find the URL by going to your dashboard, selecting your dashlet and going to "share". From there, just copy the URL from the embed tab excluding the iframe/width/height/frameboarder section. Be sure that if you want a dynamically updating dashlet to uncheck the current time range.
+Paste the link inside the URL part of the dashlet.php, more than one dashlet can be entered. You can also change the width and height of each dashlet as you please.
 
 This Home Dashboard was built using:
 * [Nice admin template](http://bootstraptaste.com/nice-admin-bootstrap-admin-html-template/?download=true)
@@ -35,6 +38,7 @@ This Home Dashboard was built using:
 
 ## Screenshots
 ![Not found](/screenshots/home.PNG?raw=true "Home")
+![Not found](/screenshots/dashlets.PNG?raw=true "Grafana")
 ![Not found](/screenshots/sidenav_open.PNG?raw=true "Side Open")
 ![Not found](/screenshots/plex.PNG?raw=true "Plex")
 
